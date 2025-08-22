@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { FiSearch, FiBell, FiUser, FiLogOut, FiSettings } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
   const [search, setSearch] = useState("");
   const [showProfileMenu, setShowProfileMenu] = useState(false);
   const [notifications, setNotifications] = useState(3); // Example count
-
+const navigate = useNavigate();
   const handleLogout = () => {
-    alert("Logging out...");
+    navigate("/",{ replace: true }); 
   };
 
   return (

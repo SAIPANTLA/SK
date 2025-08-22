@@ -2,7 +2,7 @@
 const traineesData = [
   {
     name: "Alice Brown",
-    empId: "T201",
+    empId: "T210",
     batch: "Python-01",
     email: "alice@company.com",
     phone: "1112223333",
