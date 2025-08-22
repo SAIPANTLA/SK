@@ -29,7 +29,9 @@ export default function Login() {
       const normalizedRole = role ? role.toLowerCase() : "";
 
       // JWT token, role, email store
-      localStorage.setItem("token", access || token);
+      // localStorage.setItem("token", access || token);
+      localStorage.setItem("token", response.data.access);
+      localStorage.setItem("refresh", response.data.refresh);
       localStorage.setItem("role", normalizedRole);
       localStorage.setItem("email", email);
 
